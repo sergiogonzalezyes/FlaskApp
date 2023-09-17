@@ -30,8 +30,9 @@ from datetime import datetime
 
 
 
-from auth import flow, GOOGLE_CLIENT_ID
+from .auth import flow, GOOGLE_CLIENT_ID
 from flask import session, abort, redirect, request
+import requests
 from google.oauth2 import id_token
 from pip._vendor import cachecontrol
 import google.auth.transport.requests
