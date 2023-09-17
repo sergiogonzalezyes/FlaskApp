@@ -2,7 +2,6 @@ import os
 import pathlib
 from google_auth_oauthlib.flow import Flow
 
-
 secret_key = os.environ.get("SECRET_KEY")
 print("secret_key: ", secret_key)
 
