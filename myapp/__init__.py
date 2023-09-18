@@ -3,10 +3,7 @@ import sys
 from flask import Flask 
 from .extensions import db
 from .routes import main
-from flask import session, abort, redirect, request
-from google.oauth2 import id_token
-from pip._vendor import cachecontrol
-import google.auth.transport.requests
+from .auth import flow, GOOGLE_CLIENT_ID
 from flask_cors import CORS
 
 def create_app():
